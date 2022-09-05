@@ -1,0 +1,15 @@
+.tableContainer{
+  overflow-x: scroll;
+  transform:rotateX(180deg);
+  -ms-transform:rotateX(180deg); /* IE 9 */
+  -webkit-transform:rotateX(180deg); /* Safari and Chrome */
+}
+
+.table{
+  margin: 16px;
+  min-width: 500px;
+  width: 500px;
+  transform:rotateX(180deg);
+  -ms-transform:rotateX(180deg); /* IE 9 */
+  -webkit-transform:rotateX(180deg); /* Safari and Chrome */
+}
