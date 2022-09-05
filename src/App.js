@@ -76,13 +76,14 @@ function App() {
             next={fetchRickData}
             hasMore={hasMore}
             loader={<h4>Loading...</h4>}
+            height={400}
+            style={{overflowX: "auto"}}
             endMessage={
               <p style={{ textAlign: "center" }}>
                 <b>Yay! You have seen it all</b>
               </p>
             }
           >
-            <div className={classes.tableContainer}>
               <Table
                 columns={columns}
                 dataSource={characters}
@@ -92,7 +93,6 @@ function App() {
                   pageSize: characters.length,
                 }}
               />
-            </div>
           </InfiniteScroll>
         </Col>
       </Row>
